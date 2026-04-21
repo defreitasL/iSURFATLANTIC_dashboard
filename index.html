@@ -2,20 +2,40 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Surfability Dashboards</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; }
-    h1 { margin-bottom: 0.5rem; }
-    ul { line-height: 1.9; }
-    a { text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Surfability Dashboards</h1>
-  <p>Interactive dashboards:</p>
-  <ul>
-    <li><a href="cantabria_dashboard.html">Cantabria</a></li>
-    <li><a href="gironde_dashboard.html">Gironde</a></li>
-  </ul>
+  <div class="shell">
+    <header class="hero">
+      <div class="eyebrow">Atlantic dashboards</div>
+      <h1>Surfability Dashboards</h1>
+      <p class="lead">
+        Open the interactive maps, click a point, and explore how surfability changes through the years and across the seasons.
+        Fast to load, easy to browse, and a bit more fun to look at.
+      </p>
+    </header>
+
+    <main class="grid">
+      <a class="card card--cantabria" href="cantabria_dashboard.html">
+        <span class="badge">Spain · Cantabrian coast</span>
+        <h2>Cantabria</h2>
+        <p>Interactive map, multiyear variability, and monthly seasonality for the Cantabria analysis points.</p>
+        <span class="card-footer">Open dashboard</span>
+      </a>
+
+      <a class="card card--gironde" href="gironde_dashboard.html">
+        <span class="badge">France · Atlantic coast</span>
+        <h2>Gironde</h2>
+        <p>Interactive map, multiyear variability, and monthly seasonality for the Gironde analysis points.</p>
+        <span class="card-footer">Open dashboard</span>
+      </a>
+    </main>
+
+    <div class="note">
+      Tip: click directly on a map point inside each dashboard to refresh the lower panels for that location.
+    </div>
+  </div>
 </body>
 </html>
