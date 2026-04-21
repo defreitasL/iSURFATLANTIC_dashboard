@@ -169,6 +169,12 @@ h1 {
   background: linear-gradient(135deg, var(--accent-2), var(--accent-4));
 }
 
+.card--oeste_portugal::before {
+  background: linear-gradient(135deg, var(--accent-3), var(--accent-1));
+}
+.card--northwest_ireland::before {
+  background: linear-gradient(135deg, var(--accent-4), var(--accent-2));
+}
 .badge {
   display: inline-flex;
   padding: 7px 11px;
