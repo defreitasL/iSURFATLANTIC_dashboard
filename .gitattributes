@@ -1,0 +1,13 @@
+# The data files are binary and must never be touched. Git usually works this
+# out on its own, but "usually" is not a good enough guarantee for a file whose
+# every byte is an offset: a single line-ending conversion would shift the
+# arrays and draw a coastline through the Gulf of Guinea.
+*.bin   binary
+*.png   binary
+
+# Everything else is text and can be normalised.
+*.html  text
+*.js    text
+*.css   text
+*.json  text
+*.md    text

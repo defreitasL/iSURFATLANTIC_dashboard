@@ -1,56 +1,183 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Surfability Dashboards</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>iSurfability — European Atlantic surf climate</title>
+<meta name="description" content="Surfable days a year along the European Atlantic coast, 1985 to 2024.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css?v=c7d11a493b">
 </head>
 <body>
-  <div class="shell">
-    <header class="hero">
-      <div class="eyebrow">iSURFATLANTIC</div>
-      <h1>Surfability Dashboards - Interactive Maps</h1>
-      <p class="lead">
-        Open the interactive maps, click a point, and explore how surfability changes through the years and across the seasons.
-        Fast to load, easy to browse, and a bit more fun to look at.
-      </p>
-    </header>
 
-    <main class="grid">
-      <a class="card card--cantabria" href="cantabria_dashboard.html">
-        <span class="badge">Spain · Cantabrian coast</span>
-        <h2>Cantabria</h2>
-        <p>Interactive map, multiyear variability, and monthly seasonality for the Cantabria analysis points.</p>
-        <span class="card-footer">Open dashboard</span>
-      </a>
+<div id="map"></div>
 
-      <a class="card card--gironde" href="gironde_dashboard.html">
-        <span class="badge">France · Gironde coast</span>
-        <h2>Gironde</h2>
-        <p>Interactive map, multiyear variability, and monthly seasonality for the Gironde analysis points.</p>
-        <span class="card-footer">Open dashboard</span>
-      </a>
-
-      <a class="card card--northwest_ireland" href="northwest_ireland_dashboard.html">
-        <span class="badge">Ireland · Northwest coast</span>
-        <h2>Northwest Ireland</h2>
-        <p>Interactive map, multiyear variability, and monthly seasonality for the Northwest Ireland analysis points.</p>
-        <span class="card-footer">Open dashboard</span>
-      </a>
-
-      <a class="card card--oeste_portugal" href="oeste_portugal_dashboard.html">
-        <span class="badge">Portugal · West coast</span>
-        <h2>Oeste Portugal</h2>
-        <p>Interactive map, multiyear variability, and monthly seasonality for the Oeste Portugal analysis points.</p>
-        <span class="card-footer">Open dashboard</span>
-      </a>
-
-    </main>
-
-    <div class="note">
-      Tip: click directly on a map point inside each dashboard to refresh the lower panels for that location.
+<!-- top bar ---------------------------------------------------------- -->
+<header class="bar">
+  <div class="brand">
+    <img class="mark on-light" src="logo-colour.png" alt="iSURFATLANTIC">
+    <img class="mark on-dark" src="logo-white.png" alt="iSURFATLANTIC">
+    <div>
+      <strong>iSurfability</strong>
+      <small data-i18n="subtitle">European Atlantic surf climate</small>
     </div>
   </div>
+  <div class="bar-actions">
+    <div class="search">
+      <input id="search" type="search" placeholder="Find a beach" autocomplete="off"
+             aria-label="Find a beach"
+             data-i18n-placeholder="findBeach" data-i18n-aria-label="findBeach">
+      <ul id="results" hidden></ul>
+    </div>
+    <button id="glossary" class="ghost opens" data-i18n="whatTheNumbersMean">What the numbers mean</button>
+    <button id="stats" class="ghost opens" data-i18n="fullStatistics" hidden>Full statistics</button>
+    <button id="share" class="ghost" data-i18n="share">Share</button>
+    <button id="embed" class="ghost" data-i18n="embed">Embed</button>
+    <select id="lang" class="ghost" data-i18n-aria-label="language"></select>
+    <button id="theme" class="ghost icon" data-i18n-title="lightOrDark"
+            data-i18n-aria-label="lightOrDark">◐</button>
+  </div>
+</header>
+
+<!-- left controls ---------------------------------------------------- -->
+<section class="panel controls" id="controls">
+  <button class="collapse" data-for="controls-body" aria-expanded="true">
+    <span data-i18n="whatTheMapShows">What the map shows</span><span class="chevron">▾</span>
+  </button>
+  <div class="panel-body" id="controls-body">
+    <label class="field" id="measure-field">
+      <span data-i18n="measure">Measure</span>
+      <select id="metric"></select>
+    </label>
+    <p class="about" id="about"></p>
+
+    <div class="field">
+      <span data-i18n="period">Period</span>
+      <div class="segmented" id="period" role="group">
+        <button class="on" data-period="reanalysis" data-i18n="hindcast">1985–2024</button>
+        <button data-period="projections" data-i18n="projections">Projections</button>
+      </div>
+    </div>
+
+    <div id="projection-controls" hidden>
+      <div class="field">
+        <span data-i18n="pathway">Pathway</span>
+        <div class="segmented" id="pathway" role="group"></div>
+      </div>
+      <div class="field">
+        <span data-i18n="by">By</span>
+        <div class="segmented" id="horizon" role="group"></div>
+      </div>
+      <div class="field">
+        <span data-i18n="model">Model</span>
+        <div class="segmented" id="model" role="group">
+          <button class="on" data-model="both" data-i18n="bothModels">Both</button>
+          <button data-model="a">ACCESS</button>
+          <button data-model="e">EC-EARTH</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="legend" id="legend"></div>
+
+    <label class="toggle">
+      <input type="checkbox" id="show-spots" checked>
+      <span id="spots-label">Show the 28 carded beaches</span>
+    </label>
+  </div>
+</section>
+
+<!-- right detail drawer ---------------------------------------------- -->
+<aside class="panel drawer" id="drawer" hidden>
+  <button class="close" id="drawer-close" data-i18n-aria-label="close">×</button>
+  <span class="kind" id="drawer-kind" data-i18n="coastalPoint"></span>
+  <h2 id="drawer-title">—</h2>
+  <p class="where" id="drawer-where"></p>
+
+  <div class="headline">
+    <div class="big"><b id="drawer-days">—</b><span data-i18n="surfableDaysAYear">surfable days a year</span></div>
+    <div class="chips" id="drawer-chips"></div>
+  </div>
+
+  <div id="drawer-projection" hidden>
+    <h3 data-i18n="whatTheModelsProject">What the two models project</h3>
+    <p class="verdict" id="projection-verdict"></p>
+    <div class="chart" id="chart-projection"></div>
+    <p class="caption" id="caption-projection"></p>
+    <table class="facts" id="projection-facts"></table>
+  </div>
+
+  <div id="drawer-charts">
+    <h3 data-i18n="yearByYear">Year by year</h3>
+    <div class="chart" id="chart-annual"></div>
+    <p class="caption" id="caption-annual"></p>
+
+    <h3 data-i18n="throughTheYear">Through the year</h3>
+    <div class="chart" id="chart-monthly"></div>
+    <p class="caption" data-i18n="captionMonthly">Bars: share of the month that is surfable.</p>
+  </div>
+
+  <h3 data-i18n="conditionsAndSetting">Conditions and setting</h3>
+  <table class="facts" id="drawer-facts"></table>
+
+  <div class="note" id="drawer-other" hidden></div>
+
+  <a class="card-link" id="card-link" hidden target="_blank" rel="noopener">
+    <span data-i18n="openCards">Open this beach's cards →</span>
+  </a>
+</aside>
+
+<!-- full statistics -------------------------------------------------- -->
+<div class="sheet" id="sheet" hidden>
+  <div class="sheet-inner" role="dialog" aria-modal="true" aria-labelledby="sheet-title">
+    <button class="close" id="sheet-close" data-i18n-aria-label="close">×</button>
+    <h2 id="sheet-title" data-i18n="sheetTitle">What the projections say</h2>
+    <p class="sheet-lede" id="sheet-lede"></p>
+
+    <h3 data-i18n="sheetComposition">How much of the coast each run actually claims</h3>
+    <div id="sheet-composition"></div>
+    <p class="caption" id="caption-composition"></p>
+
+    <h3 data-i18n="sheetSpread">How big the change is, run by run</h3>
+    <div id="sheet-spread"></div>
+    <p class="caption" data-i18n="sheetSpreadCaption"></p>
+
+    <h3 data-i18n="sheetAgreement">Where the two models agree, beach by beach</h3>
+    <div class="sheet-controls" id="sheet-controls"></div>
+    <div id="sheet-agreement"></div>
+    <p class="caption" id="caption-agreement"></p>
+
+    <h3 data-i18n="sheetAreas">By area</h3>
+    <div id="sheet-areas"></div>
+    <p class="caption" data-i18n="sheetAreasCaption"></p>
+  </div>
+</div>
+
+<!-- what the numbers mean ------------------------------------------- -->
+<div class="sheet" id="glossary-sheet" hidden>
+  <div class="sheet-inner" role="dialog" aria-modal="true" aria-labelledby="glossary-title">
+    <button class="close" id="glossary-close" data-i18n-aria-label="close">×</button>
+    <h2 id="glossary-title"></h2>
+    <p class="sheet-lede" id="glossary-lede"></p>
+    <div id="glossary-sections"></div>
+    <h3 id="glossary-metrics-heading"></h3>
+    <p class="caption" id="glossary-metrics-lede"></p>
+    <div class="glossary-picker" id="glossary-picker"></div>
+    <div id="glossary-metric"></div>
+    <h3 id="glossary-projections-heading"></h3>
+    <p class="caption" id="glossary-projections-lede"></p>
+    <dl id="glossary-terms"></dl>
+  </div>
+</div>
+
+<!-- hover tooltip ---------------------------------------------------- -->
+<div id="tip" class="tip" hidden></div>
+
+<footer class="credit">
+  <span id="credit-text">iSurfability · iSURFATLANTIC · IHCantabria</span>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="app.js?v=c7d11a493b" defer></script>
 </body>
 </html>

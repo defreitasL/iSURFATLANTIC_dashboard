@@ -1,0 +1,292 @@
+{
+  "lang": "en",
+  "name": "English",
+  "ui": {
+    "subtitle": "European Atlantic surf climate",
+    "findBeach": "Find a beach",
+    "fullStatistics": "Full statistics",
+    "whatTheNumbersMean": "Glossary",
+    "share": "Share",
+    "embed": "Embed",
+    "copied": "Copied",
+    "pressToCopy": "Press Ctrl+C",
+    "lightOrDark": "Light or dark",
+    "language": "Language",
+    "close": "Close",
+    "whatTheMapShows": "What the map shows",
+    "measure": "Measure",
+    "period": "Period",
+    "hindcast": "1985–2024",
+    "projections": "Projections",
+    "pathway": "Pathway",
+    "by": "By",
+    "model": "Model",
+    "bothModels": "Both",
+    "showSpots": "Show the {count} carded beaches",
+    "low": "low",
+    "high": "high",
+    "lessSurf": "less surf",
+    "moreSurf": "more",
+    "daysPerYear": "days/yr",
+    "fadedKeyBoth": "Faded where the shift could be chance, where the two models pull opposite ways, or where the beach has under {floor} surfable days a year to lose.",
+    "fadedKeyOne": "Faded where the shift could be chance, or where the beach has under {floor} surfable days a year to lose.",
+    "stripTitle": "Of the {count} beaches with more than {floor} surfable days a year",
+    "bucketRobust": "{share} % lose surf, both models, beyond chance",
+    "bucketSoft": "{share} % lose surf, but within the noise",
+    "bucketSplit": "{share} % the models disagree",
+    "bucketRising": "{share} % gain surf, both models",
+    "aboutProjection": "{who}, against {whose} own 1985–2014. Full colour only where the shift is bigger than chance across the whole map{andAgree}; faded below {floor} surfable days a year.",
+    "aboutProjectionBoth": "Both models",
+    "aboutProjectionTheirOwn": "their own",
+    "aboutProjectionItsOwn": "its own",
+    "aboutProjectionAgree": " in both models, and they agree",
+    "changeLabel": "Change in surfable days, {pathway} by {horizon}",
+    "coastalPoint": "Coastal grid point",
+    "studiedBeach": "Studied beach",
+    "coastAt": "Coast at {lat}° {hemisphere}",
+    "faces": "faces {degrees}°",
+    "surfableDaysAYear": "surfable days a year",
+    "inWinter": "{value} in winter",
+    "inSummer": "{value} in summer",
+    "perDecade": "{value} days/decade",
+    "notClear": " (not clear)",
+    "cardsCount": "{count} cards, reanalysis and projections",
+    "yearByYear": "Year by year",
+    "throughTheYear": "Through the year",
+    "conditionsAndSetting": "Conditions and setting",
+    "openCards": "Open this beach's cards →",
+    "captionAnnual": "Surfable days in each year from {first} to {last}. The dashed line is the average.",
+    "captionMonthly": "Bars: share of the month that is surfable. Line: the mean index, which says how good the sea is even when it falls short.",
+    "factFrom": "From",
+    "factOwnCard": "its own card, at the beach",
+    "factAspect": "Aspect used",
+    "factWaveHeight": "Wave height at the beach",
+    "factWavePeriod": "Wave period",
+    "factWindSpeed": "Wind speed",
+    "factOffshoreWind": "Offshore wind",
+    "factBestMonth": "Best month",
+    "factFlatSpell": "Longest flat spell",
+    "factNAO": "Tie to the NAO",
+    "nearbyBeach": "<b>{name}</b> is {km} km away and has a card of its own, which says {days} days a year.",
+    "nearbyAspect": " It differs from this point because the beach faces {beach}° and this point faces {point}°.",
+    "openTheBeach": "Open the beach",
+    "whatTheModelsProject": "What the two models project",
+    "verdictBelowFloor": "Under {floor} surfable days a year here, which is too few for a change in them to carry meaning. The models still answer: {both} by {horizon} under {pathway}.",
+    "verdictSplit": "<b>The two models pull opposite ways here</b> — {both} by {horizon} under {pathway}. That disagreement is the finding, not something to average away.",
+    "verdictNotSure": "Both models point to {word} by {horizon} under {pathway} — {both} — but the shift is not bigger than what a map of thirty thousand points throws up by chance. Read it as a lean, not as a forecast.",
+    "verdictBothBeyond": "<b>Both models agree on {word}</b> by {horizon} under {pathway}: {both} — and each shift is larger than the swing that model shows between an ordinary good year and an ordinary bad one. This is the strong case.",
+    "verdictOneBeyond": "<b>Both models agree on {word}</b> by {horizon} under {pathway}: {both}. {model}'s shift clears the swing between its own ordinary good and bad years; the other model's does not, so how much is still open even though the direction is not.",
+    "verdictNeitherBeyond": "<b>Both models agree on {word}</b> by {horizon} under {pathway}: {both}. Each is beyond chance, but both stay inside the swing that model already shows between an ordinary good year and an ordinary bad one.",
+    "lessSurfWord": "less surf",
+    "moreSurfWord": "more surf",
+    "daysAYear": "{a} and {e} days a year",
+    "captionProjection": "Change in surfable days a year against each model's own 1985–2014, under {pathway}. Each shaded band is that model's own swing between ordinary years, ±1 standard deviation of its thirty annual totals: a shift that stays inside its band is smaller than the difference between a good year and a bad one. Filled dots survive the false-discovery correction across the whole map; hollow ones do not.",
+    "baselineNote": "This beach's downscaled history runs {ratios} its observed record. That is why each change is measured against the model's own past and never against the observations.",
+    "factSwing": "This beach's year-to-year swing",
+    "factSwingValue": "±{value} days",
+    "factModelBy": "{model} by {horizon}",
+    "factModelValue": "{value} days a year",
+    "beyondTheSwing": " · beyond the swing",
+    "beyondChance": " · beyond chance",
+    "withinTheNoise": " · within the noise",
+    "factModelHistory": "{model}, its own 1985–2014",
+    "sheetTitle": "What the projections say",
+    "sheetLede": "Two CMIP6 models, two pathways, three horizons, each measured against its own 1985–2014 rather than against the observations. Of the <b>{total}</b> beaches with enough surf to summarise, only SSP5-8.5 at 2071–2100 moves most of them together: <b>{robust} %</b> lose surf in both models by more than chance. Everywhere else the shift sits inside the noise for the great majority of the coast. And two models is a small ensemble — two of anything agree half the time by accident.",
+    "sheetComposition": "How much of the coast each run actually claims",
+    "sheetCompositionCaption": "Every beach with more than {floor} surfable days a year, sorted into four. A run is telling you something only where the dark band is wide.",
+    "sheetSpread": "How big the change is, run by run",
+    "sheetSpreadCaption": "The middle half of beaches, with the median marked, each model against its own 1985–2014.",
+    "sheetSpreadUnit": "change in surfable days a year",
+    "sheetAgreement": "Where the two models agree, beach by beach",
+    "sheetAgreementCaption": "{pathway} by {horizon}, one square per group of beaches. On the dashed diagonal the two models say the same thing; the further from it, the more they differ about how much. Both lose surf at <b>{bothDown} %</b> of beaches, both gain at {bothUp} %, and at {split} % one gains while the other loses.",
+    "sheetAreas": "By area",
+    "sheetAreasCaption": "Median change and the share of beaches losing surf. The Canaries and Madeira are where the models part company, and also where there is most surf to lose.",
+    "areaFacade": "Atlantic facade",
+    "areaSouth": "South of Iberia",
+    "areaIslands": "Canaries and Madeira",
+    "bothLoseSurf": "both models lose surf",
+    "daysAYearAxis": "days a year",
+    "falling": "{share} % falling",
+    "noMapTitle": "The map library could not be loaded.",
+    "noMapBody": "maplibre-gl 4.7.1 is fetched from cdn.jsdelivr.net, which this browser cannot reach. Every number behind the map is local and the panel beside it still works; reload once the network allows that host.",
+    "mapUnavailable": " · map library unavailable",
+    "mismatchTitle": "This page is holding files from two different builds.",
+    "mismatchBody": "A cached copy of one data file has been paired with a fresh copy of another, and together they describe nothing real. Reload with Ctrl+Shift+R (Cmd+Shift+R on a Mac) to clear it.",
+    "credit": "{count} coastal points · {from}–{to} · index threshold {threshold} · iSURFATLANTIC, IHCantabria",
+    "noValue": "no value",
+    "groupSurfability": "Surfability",
+    "groupSeason": "Season",
+    "groupChange": "Change",
+    "groupConditions": "Conditions",
+    "shareOfCoast": "{share} % of the coast",
+    "alsoCalled": "also called {names}",
+    "gridNote": "The kilometre-spaced coastal grid nearby faces {degrees}° and gives <b>{days} days a year</b>. Where the two aspects differ, so do the numbers, and the card is the one measured at the beach.",
+    "seeGridPoint": "See that grid point",
+    "tipSpread": "{model}: median {median}, middle half {q1} to {q3} days a year",
+    "tipArea": "{model}: median {median} days a year over {count} beaches",
+    "pageTitle": "iSurfability — European Atlantic surf climate",
+    "noProjections": "This build has no projections in it"
+  },
+  "metrics": {
+    "mean_days_per_year": {
+      "label": "Surfable days a year",
+      "about": "Days a year the surfability index passes the threshold.",
+      "plain": "The headline number. Out of 365 days, how many had a sea worth paddling out into — waves big enough and clean enough, with wind that did not ruin them. A beach at 150 is surfable roughly every other day; a beach at 10 gives you a long weekend's worth a year, usually in winter storms."
+    },
+    "index_p90": {
+      "label": "Quality of the best days",
+      "about": "The index value only one day in ten beats.",
+      "plain": "Not how often, but how good it gets. Take the best tenth of all hours and ask what the index reaches there. Two beaches can have the same number of surfable days while one of them never produces anything memorable and the other does so regularly."
+    },
+    "median_surfable_spell_days": {
+      "label": "Typical run of surfable days",
+      "about": "How long a surfable spell usually lasts once it starts.",
+      "plain": "When it turns on, how long does it stay on. This is what decides whether a trip is worth planning: three days in a row means you can drive somewhere on a forecast, one day at a time means you have to live nearby."
+    },
+    "longest_flat_spell_days": {
+      "label": "Longest flat spell",
+      "about": "The longest the sea stayed under the threshold in the whole record. Long is bad here, so the scale runs the other way.",
+      "plain": "The worst drought in forty years: the longest the sea went without a single surfable day. Long is bad, so this scale runs backwards from the others — dark is a beach that never really switches off."
+    },
+    "days_winter": {
+      "label": "Surfable days in winter",
+      "about": "December to February.",
+      "plain": "Surfable days falling in December, January and February. On this coast most of the surf is here, which is also when the water is coldest and the storms least forgiving."
+    },
+    "days_summer": {
+      "label": "Surfable days in summer",
+      "about": "June to August.",
+      "plain": "Surfable days falling in June, July and August. This is the number that decides whether a beach has anything to offer in the season when people are actually on holiday."
+    },
+    "seasonal_amplitude_pct": {
+      "label": "How seasonal",
+      "about": "Best month minus worst month, in percentage points of the time surfable.",
+      "plain": "How uneven the year is. A high number means a beach that works in winter and dies in summer; a low one means a place that gives you something all year round, even if it is never much."
+    },
+    "best_month_number": {
+      "label": "Best month",
+      "about": "The month with the most surfable hours.",
+      "plain": "Which month delivers most. Along the open Atlantic this is almost always deep winter; where it is not, something about the beach's aspect or shelter is doing the work."
+    },
+    "trend_days_per_decade": {
+      "label": "Trend, 1985 to 2024",
+      "about": "Least-squares slope of surfable days a year. Faded where the slope cannot be told apart from zero, and where the coast has under 5 surfable days a year to start with.",
+      "plain": "Whether the record itself is drifting: how many surfable days a year the beach has gained or lost per decade since 1985. This is what was measured, not what is projected. Read it with care — a count that cannot go below zero can only trend upward, which is why a beach with almost no surf will almost always look like it is improving. The map fades those."
+    },
+    "interannual_variability": {
+      "label": "Year-to-year swing",
+      "about": "Spread between years, relative to the average year.",
+      "plain": "How much one year differs from the next. It is the yardstick everything else should be measured against: a beach that swings by thirty days between a good year and a bad one is not meaningfully changed by a five-day shift."
+    },
+    "corr_NAO": {
+      "label": "Tie to the NAO",
+      "about": "Correlation between the winter NAO index and that winter's surfable days.",
+      "plain": "How tightly the beach follows the North Atlantic Oscillation, the pressure see-saw that steers winter storms across the ocean. A strong tie means the winter's surf is largely decided out in the Atlantic months in advance, and that the beach's good and bad years come in runs."
+    },
+    "mean_nearshore_wave_height": {
+      "label": "Wave height at the beach",
+      "about": "Mean significant wave height after refraction and shoaling.",
+      "plain": "The average wave height after the swell has bent and shoaled its way in, not what the offshore buoy says. Two beaches a kilometre apart can differ by half a metre because one faces the swell and the other sits in the shadow of a headland."
+    },
+    "mean_wave_period": {
+      "label": "Wave period",
+      "about": "Mean peak period offshore.",
+      "plain": "The seconds between one wave and the next. Long period means swell born in a distant storm, which arrives ordered and breaks well; short period means local windsea, which arrives as a mess."
+    },
+    "mean_wind_speed": {
+      "label": "Wind speed",
+      "about": "Mean wind speed at 10 m.",
+      "plain": "Average wind at the beach. Wind is what separates a good swell from a wasted one, and how it blows matters more than how hard — see the next measure."
+    },
+    "offshore_wind_fraction": {
+      "label": "Share of offshore wind",
+      "about": "Fraction of the time the wind blows from the land out to sea, which is the wind that grooms a wave.",
+      "plain": "How often the wind blows from the land out to sea. That is the wind that holds a wave up and smooths its face; the opposite blows it over before it breaks properly. A beach with a high share has its own small climate working in its favour."
+    }
+  },
+  "glossary": {
+    "title": "What the numbers mean",
+    "lede": "Every number on this map comes from the same question asked once an hour for forty years: was the sea worth surfing at this spot, at this moment? What follows is what that question means and what each answer to it is counting.",
+    "sections": [
+      {
+        "heading": "A surfable day",
+        "body": [
+          "Three things have to be right at once. The waves have to be big enough to ride and not so big as to be unrideable. They have to arrive with enough order — long-period swell from a distant storm breaks cleanly, a short-period local windsea does not. And the wind has to be blowing the right way: offshore, from the land out to sea, holds a wave up; onshore flattens it.",
+          "Each of the three is scored out of ten, and the three are multiplied rather than averaged. That is deliberate: a perfect swell with a ruinous wind is not an average day, it is a wasted one, and multiplying lets any one of the three veto the others.",
+          "An hour counts as surfable when that combined index reaches <b>{threshold}</b>. A day counts when at least one of its hours does. Everything else on this map is a way of counting those days."
+        ]
+      },
+      {
+        "heading": "Where the waves come from",
+        "body": [
+          "Offshore wave conditions come from the IBI reanalysis and the winds from CERRA — both are reconstructions of what the atmosphere and the ocean actually did, hour by hour, from 1985 to 2024, not forecasts and not models of a hypothetical world.",
+          "The sea does not arrive at the beach the way it leaves the open ocean. Each wave is refracted and shoaled onto the beach's own aspect, so a swell that hits one headland square and another at a glancing angle is counted differently at each. Waves arriving from behind a beach are tapered out rather than counted, which is what makes two points a kilometre apart give honestly different answers."
+        ]
+      },
+      {
+        "heading": "A coastal point and a studied beach",
+        "body": [
+          "The coloured line is a grid: one point every kilometre, each taking the coastline's aspect where it sits. It is consistent everywhere and it knows nothing about any particular beach.",
+          "The {spots} marked beaches are different. Each was placed by hand, with the aspect the beach actually has, and each has sixteen analysis cards of its own. Where a beach and the grid point beside it disagree, the beach is the better answer — and the difference is almost always aspect, because around a headland the coastline's average direction is not the direction the beach faces."
+        ]
+      },
+      {
+        "heading": "What the map leaves out",
+        "body": [
+          "Rias, harbours and the inner parts of estuaries are computed but not drawn. The physics knows about refraction and shoaling but not about land standing in the way, so a point inside a harbour can be handed swell from a cell out at sea and report surf that could not possibly reach it. Before this was caught, the six highest-scoring points of the whole record were a harbour basin and two inner rias.",
+          "Great Britain, the Mediterranean, the African side of the Strait and the Saharan coast are also left off: they are outside what this project is about, not places where the method fails."
+        ]
+      }
+    ],
+    "metricsHeading": "The measures, one by one",
+    "metricsLede": "Pick one to see what it counts. The bars underneath show how the published coast is distributed across it, and in the colours the map uses.",
+    "projectionsHeading": "The projections, and their vocabulary",
+    "projectionsLede": "The second half of this map is what two CMIP6 climate models imply for the same beaches. Four phrases carry most of the meaning.",
+    "terms": [
+      {
+        "term": "Against its own history",
+        "body": "Each model is compared with its own 1985–2014, never with the observations. Models run wet or dry; what carries into the future is the shift, not the level. It is why a beach can show 14 observed surfable days beside a model baseline of 56 and nothing is wrong."
+      },
+      {
+        "term": "Inside the noise",
+        "body": "Every beach swings between a good year and a bad one, often by tens of days. A projected change smaller than that swing is smaller than the difference between two ordinary years, whatever its statistics say. On most of this coast, at most horizons, that is exactly where the change sits."
+      },
+      {
+        "term": "Beyond chance",
+        "body": "Tested across thirty thousand points, a few hundred will look significant by luck alone. The p-values are therefore corrected so that what is reported is the false-discovery rate, not the raw count. A shift that is 'beyond chance' has survived that correction."
+      },
+      {
+        "term": "The models disagree",
+        "body": "Two models is a small ensemble, and two of anything agree half the time by accident. Where they move opposite ways the map fades the stretch and says so, because that disagreement is a finding in itself. It is widest over the Canaries and Madeira, which is also where there is most surf to lose."
+      }
+    ]
+  },
+  "months": [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec"
+  ],
+  "units": {
+    "days/yr": "days/yr",
+    "days": "days",
+    "index": "index",
+    "% points": "% points",
+    "month": "month",
+    "days/decade": "days/decade",
+    "ratio": "ratio",
+    "correlation": "correlation",
+    "m": "m",
+    "s": "s",
+    "m/s": "m/s",
+    "fraction": "fraction"
+  }
+}

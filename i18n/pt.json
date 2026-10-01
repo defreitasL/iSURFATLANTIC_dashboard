@@ -1,0 +1,292 @@
+{
+  "lang": "pt",
+  "name": "Português",
+  "months": [
+    "jan",
+    "fev",
+    "mar",
+    "abr",
+    "mai",
+    "jun",
+    "jul",
+    "ago",
+    "set",
+    "out",
+    "nov",
+    "dez"
+  ],
+  "ui": {
+    "subtitle": "Clima de surf do Atlântico europeu",
+    "findBeach": "Procurar uma praia",
+    "fullStatistics": "Estatísticas completas",
+    "whatTheNumbersMean": "Glossário",
+    "share": "Partilhar",
+    "embed": "Incorporar",
+    "copied": "Copiado",
+    "pressToCopy": "Carregue em Ctrl+C",
+    "lightOrDark": "Claro ou escuro",
+    "language": "Idioma",
+    "close": "Fechar",
+    "noValue": "sem valor",
+    "whatTheMapShows": "O que mostra o mapa",
+    "measure": "Medida",
+    "period": "Período",
+    "hindcast": "1985–2024",
+    "projections": "Projeções",
+    "pathway": "Via",
+    "by": "Até",
+    "model": "Modelo",
+    "bothModels": "Ambos",
+    "showSpots": "Mostrar as {count} praias com ficha",
+    "groupSurfability": "Surfabilidade",
+    "groupSeason": "Estação",
+    "groupChange": "Mudança",
+    "groupConditions": "Condições",
+    "shareOfCoast": "{share} % da costa",
+    "low": "baixo",
+    "high": "alto",
+    "lessSurf": "menos surf",
+    "moreSurf": "mais",
+    "daysPerYear": "dias/ano",
+    "fadedKeyBoth": "Esbatido onde a mudança pode ser acaso, onde os dois modelos puxam em sentidos opostos, ou onde a praia tem menos de {floor} dias surfáveis por ano a perder.",
+    "fadedKeyOne": "Esbatido onde a mudança pode ser acaso, ou onde a praia tem menos de {floor} dias surfáveis por ano a perder.",
+    "stripTitle": "Das {count} praias com mais de {floor} dias surfáveis por ano",
+    "bucketRobust": "{share} % perdem surf, nos dois modelos, para além do acaso",
+    "bucketSoft": "{share} % perdem surf, mas dentro do ruído",
+    "bucketSplit": "{share} % os modelos divergem",
+    "bucketRising": "{share} % ganham surf, nos dois modelos",
+    "aboutProjection": "{who}, face ao seu próprio 1985–2014. Cor plena apenas onde a mudança é maior do que o acaso em todo o mapa{andAgree}; esbatido abaixo de {floor} dias surfáveis por ano.",
+    "aboutProjectionBoth": "Ambos os modelos",
+    "aboutProjectionTheirOwn": "o seu próprio",
+    "aboutProjectionItsOwn": "o seu próprio",
+    "aboutProjectionAgree": " nos dois modelos, e concordam",
+    "changeLabel": "Mudança nos dias surfáveis, {pathway} até {horizon}",
+    "coastalPoint": "Ponto da malha costeira",
+    "studiedBeach": "Praia estudada",
+    "coastAt": "Costa a {lat}° {hemisphere}",
+    "faces": "orientada a {degrees}°",
+    "surfableDaysAYear": "dias surfáveis por ano",
+    "inWinter": "{value} no inverno",
+    "inSummer": "{value} no verão",
+    "perDecade": "{value} dias/década",
+    "notClear": " (não conclusivo)",
+    "cardsCount": "{count} fichas, reanálise e projeções",
+    "yearByYear": "Ano a ano",
+    "throughTheYear": "Ao longo do ano",
+    "conditionsAndSetting": "Condições e enquadramento",
+    "openCards": "Abrir as fichas desta praia →",
+    "captionAnnual": "Dias surfáveis em cada ano, de {first} a {last}. A linha tracejada é a média.",
+    "captionMonthly": "Barras: parte do mês que é surfável. Linha: o índice médio, que diz como está o mar mesmo quando não chega ao limiar.",
+    "factFrom": "De",
+    "factOwnCard": "a sua própria ficha, na praia",
+    "factAspect": "Orientação usada",
+    "factWaveHeight": "Altura de onda na praia",
+    "factWavePeriod": "Período de onda",
+    "factWindSpeed": "Velocidade do vento",
+    "factOffshoreWind": "Vento de terra",
+    "factBestMonth": "Melhor mês",
+    "factFlatSpell": "Maior período sem ondulação",
+    "factNAO": "Ligação à NAO",
+    "nearbyBeach": "<b>{name}</b> fica a {km} km e tem ficha própria, que indica {days} dias por ano.",
+    "nearbyAspect": " Difere deste ponto porque a praia está orientada a {beach}° e este ponto a {point}°.",
+    "openTheBeach": "Abrir a praia",
+    "whatTheModelsProject": "O que projetam os dois modelos",
+    "verdictBelowFloor": "Aqui há menos de {floor} dias surfáveis por ano, poucos demais para que uma mudança neles signifique alguma coisa. Os modelos respondem na mesma: {both} até {horizon} em {pathway}.",
+    "verdictSplit": "<b>Os dois modelos puxam em sentidos opostos aqui</b> — {both} até {horizon} em {pathway}. Essa divergência é o resultado, não algo para fazer uma média.",
+    "verdictNotSure": "Os dois modelos apontam para {word} até {horizon} em {pathway} — {both} — mas a mudança não é maior do que aquilo que um mapa de trinta mil pontos produz por acaso. Leia-o como uma inclinação, não como uma previsão.",
+    "verdictBothBeyond": "<b>Os dois modelos concordam em {word}</b> até {horizon} em {pathway}: {both} — e cada mudança é maior do que a oscilação que esse modelo mostra entre um ano bom normal e um ano mau normal. Este é o caso sólido.",
+    "verdictOneBeyond": "<b>Os dois modelos concordam em {word}</b> até {horizon} em {pathway}: {both}. A mudança de {model} ultrapassa a oscilação entre os seus próprios anos bons e maus; a do outro modelo não, por isso o quanto continua em aberto mesmo que o sentido não esteja.",
+    "verdictNeitherBeyond": "<b>Os dois modelos concordam em {word}</b> até {horizon} em {pathway}: {both}. Cada um ultrapassa o acaso, mas ambos ficam dentro da oscilação que esse modelo já mostra entre um ano bom normal e um ano mau normal.",
+    "lessSurfWord": "menos surf",
+    "moreSurfWord": "mais surf",
+    "daysAYear": "{a} e {e} dias por ano",
+    "captionProjection": "Mudança nos dias surfáveis por ano face ao 1985–2014 próprio de cada modelo, em {pathway}. Cada banda sombreada é a oscilação desse modelo entre anos normais, ±1 desvio-padrão dos seus trinta totais anuais: uma mudança que fica dentro da sua banda é menor do que a diferença entre um ano bom e um ano mau. Os pontos preenchidos sobrevivem à correção de falsas descobertas em todo o mapa; os vazios não.",
+    "baselineNote": "A história reduzida de escala desta praia vale {ratios} o seu registo observado. É por isso que cada mudança é medida contra o passado do próprio modelo e nunca contra as observações.",
+    "factSwing": "Oscilação interanual desta praia",
+    "factSwingValue": "±{value} dias",
+    "factModelBy": "{model} até {horizon}",
+    "factModelValue": "{value} dias por ano",
+    "beyondTheSwing": " · ultrapassa a oscilação",
+    "beyondChance": " · para além do acaso",
+    "withinTheNoise": " · dentro do ruído",
+    "factModelHistory": "{model}, o seu próprio 1985–2014",
+    "sheetTitle": "O que dizem as projeções",
+    "sheetLede": "Dois modelos CMIP6, duas vias, três horizontes, cada um medido face ao seu próprio 1985–2014 e não às observações. Das <b>{total}</b> praias com surf suficiente para resumir, só SSP5-8.5 a 2071–2100 as move quase todas no mesmo sentido: <b>{robust} %</b> perdem surf nos dois modelos para além do acaso. Em tudo o resto a mudança cabe dentro do ruído para a grande maioria da costa. E dois modelos são um conjunto pequeno — duas coisas quaisquer concordam metade das vezes por acidente.",
+    "sheetComposition": "Quanta costa cada run afirma de facto",
+    "sheetCompositionCaption": "Todas as praias com mais de {floor} dias surfáveis por ano, repartidas em quatro. Um run está a dizer-lhe alguma coisa apenas onde a banda escura é larga.",
+    "sheetSpread": "Qual o tamanho da mudança, run a run",
+    "sheetSpreadCaption": "A metade central das praias, com a mediana assinalada, cada modelo face ao seu próprio 1985–2014.",
+    "sheetSpreadUnit": "mudança nos dias surfáveis por ano",
+    "sheetAgreement": "Onde os dois modelos concordam, praia a praia",
+    "sheetAgreementCaption": "{pathway} até {horizon}, um quadrado por grupo de praias. Sobre a diagonal tracejada os dois modelos dizem o mesmo; quanto mais longe, mais divergem no quanto. Ambos perdem surf em <b>{bothDown} %</b> das praias, ambos ganham em {bothUp} %, e em {split} % um ganha enquanto o outro perde.",
+    "sheetAreas": "Por zona",
+    "sheetAreasCaption": "Mudança mediana e percentagem de praias que perdem surf. A Canária e a Madeira são onde os modelos se separam, e também onde há mais surf a perder.",
+    "areaFacade": "Fachada atlântica",
+    "areaSouth": "Sul da Península",
+    "areaIslands": "Canárias e Madeira",
+    "bothLoseSurf": "os dois modelos perdem surf",
+    "daysAYearAxis": "dias por ano",
+    "falling": "{share} % a descer",
+    "noMapTitle": "Não foi possível carregar a biblioteca do mapa.",
+    "noMapBody": "maplibre-gl 4.7.1 é obtida de cdn.jsdelivr.net, que este navegador não alcança. Todos os números por trás do mapa são locais e o painel ao lado continua a funcionar; recarregue quando a rede permitir esse servidor.",
+    "mapUnavailable": " · biblioteca do mapa indisponível",
+    "mismatchTitle": "Esta página tem ficheiros de duas compilações diferentes.",
+    "mismatchBody": "Uma cópia em cache de um ficheiro de dados foi emparelhada com uma cópia nova de outro, e juntos não descrevem nada de real. Recarregue com Ctrl+Shift+R (Cmd+Shift+R num Mac) para limpar.",
+    "credit": "{count} pontos de costa · {from}–{to} · limiar do índice {threshold} · iSURFATLANTIC, IHCantabria",
+    "alsoCalled": "também chamada {names}",
+    "gridNote": "A malha costeira ao quilómetro que está ao lado está orientada a {degrees}° e dá <b>{days} dias por ano</b>. Quando as duas orientações diferem, os números também, e a ficha é a medida na praia.",
+    "seeGridPoint": "Ver esse ponto da malha",
+    "tipSpread": "{model}: mediana {median}, metade central de {q1} a {q3} dias por ano",
+    "tipArea": "{model}: mediana {median} dias por ano em {count} praias",
+    "pageTitle": "iSurfability — Clima de surf do Atlântico europeu",
+    "noProjections": "Esta compilação não traz projeções"
+  },
+  "metrics": {
+    "mean_days_per_year": {
+      "label": "Dias surfáveis por ano",
+      "about": "Dias por ano em que o índice de surfabilidade passa o limiar.",
+      "plain": "O número principal. De 365 dias, quantos tiveram mar que valia a remada: ondas com tamanho suficiente e limpas, com vento que não as estragou. Uma praia com 150 é surfável mais ou menos dia sim, dia não; uma com 10 dá-lhe o equivalente a um fim de semana prolongado por ano, quase sempre em temporais de inverno."
+    },
+    "index_p90": {
+      "label": "Qualidade dos melhores dias",
+      "about": "O valor do índice que apenas um dia em cada dez ultrapassa.",
+      "plain": "Não a frequência, mas até onde chega a ficar bom. Tome o melhor décimo de todas as horas e veja até onde sobe o índice aí. Duas praias podem ter os mesmos dias surfáveis sendo que uma nunca produz nada memorável e a outra sim, com regularidade."
+    },
+    "median_surfable_spell_days": {
+      "label": "Duração típica de uma série surfável",
+      "about": "Quanto dura normalmente uma série surfável depois de começar.",
+      "plain": "Quando liga, quanto tempo fica ligado. É isto que decide se vale a pena planear uma viagem: três dias seguidos significa que pode conduzir até lá com uma previsão; um dia de cada vez significa que tem de morar perto."
+    },
+    "longest_flat_spell_days": {
+      "label": "Maior período sem ondulação",
+      "about": "O mais tempo que o mar esteve abaixo do limiar em todo o registo. Aqui longo é mau, por isso a escala corre ao contrário.",
+      "plain": "A pior seca em quarenta anos: o mais tempo que o mar esteve sem um único dia surfável. Longo é mau, por isso esta escala corre ao contrário das outras: escuro é uma praia que nunca chega a desligar-se."
+    },
+    "days_winter": {
+      "label": "Dias surfáveis no inverno",
+      "about": "De dezembro a fevereiro.",
+      "plain": "Dias surfáveis que caem em dezembro, janeiro e fevereiro. Nesta costa é aí que está quase todo o surf, que é também quando a água está mais fria e os temporais menos perdoam."
+    },
+    "days_summer": {
+      "label": "Dias surfáveis no verão",
+      "about": "De junho a agosto.",
+      "plain": "Dias surfáveis que caem em junho, julho e agosto. É o número que decide se uma praia tem alguma coisa a oferecer na época em que as pessoas estão mesmo de férias."
+    },
+    "seasonal_amplitude_pct": {
+      "label": "Quão sazonal",
+      "about": "Melhor mês menos pior mês, em pontos percentuais de tempo surfável.",
+      "plain": "Quão desigual é o ano. Um número alto designa uma praia que funciona no inverno e morre no verão; um baixo, um sítio que dá alguma coisa todo o ano, mesmo que nunca seja grande coisa."
+    },
+    "best_month_number": {
+      "label": "Melhor mês",
+      "about": "O mês com mais horas surfáveis.",
+      "plain": "Que mês dá mais. No Atlântico aberto é quase sempre pleno inverno; quando não é, alguma coisa na orientação ou no abrigo da praia está a fazer o trabalho."
+    },
+    "trend_days_per_decade": {
+      "label": "Tendência, 1985 a 2024",
+      "about": "Declive por mínimos quadrados dos dias surfáveis por ano. Esbatido onde o declive não se distingue de zero e onde a costa parte de menos de 5 dias surfáveis por ano.",
+      "plain": "Se o próprio registo está a derivar: quantos dias surfáveis por ano a praia ganhou ou perdeu por década desde 1985. Isto é o que foi medido, não o que é projetado. Leia com cuidado: uma contagem que não pode descer abaixo de zero só pode tender a subir, e por isso uma praia quase sem surf quase sempre parecerá estar a melhorar. O mapa esbate essas."
+    },
+    "interannual_variability": {
+      "label": "Oscilação de ano para ano",
+      "about": "Dispersão entre anos, relativa ao ano médio.",
+      "plain": "Quanto um ano difere do seguinte. É a bitola com que tudo o resto devia ser medido: uma praia que oscila trinta dias entre um ano bom e um mau não é alterada de forma apreciável por um desvio de cinco dias."
+    },
+    "corr_NAO": {
+      "label": "Ligação à NAO",
+      "about": "Correlação entre o índice NAO de inverno e os dias surfáveis desse inverno.",
+      "plain": "Quão colada a praia anda à Oscilação do Atlântico Norte, o baloiço de pressões que conduz os temporais de inverno pelo oceano. Uma ligação forte significa que o surf do inverno se decide em grande parte ao largo, com meses de antecedência, e que os anos bons e maus da praia vêm em séries."
+    },
+    "mean_nearshore_wave_height": {
+      "label": "Altura de onda na praia",
+      "about": "Altura significativa média depois da refração e do empolamento.",
+      "plain": "A altura média da onda depois de a ondulação se ter curvado e empolado ao aproximar-se, e não o que diz a boia ao largo. Duas praias a um quilómetro podem diferir meio metro porque uma está de frente para a ondulação e a outra à sombra de um cabo."
+    },
+    "mean_wave_period": {
+      "label": "Período de onda",
+      "about": "Período de pico médio ao largo.",
+      "plain": "Os segundos entre uma onda e a seguinte. Período longo quer dizer ondulação nascida num temporal distante, que chega ordenada e rebenta bem; período curto quer dizer vaga local de vento, que chega desarrumada."
+    },
+    "mean_wind_speed": {
+      "label": "Velocidade do vento",
+      "about": "Velocidade média do vento a 10 m.",
+      "plain": "Vento médio na praia. O vento é o que separa uma boa ondulação de uma desperdiçada, e a direção conta mais do que a força: veja a medida seguinte."
+    },
+    "offshore_wind_fraction": {
+      "label": "Proporção de vento de terra",
+      "about": "Fração do tempo em que o vento sopra de terra para o mar, que é o vento que penteia a onda.",
+      "plain": "Com que frequência o vento sopra de terra para o mar. É o vento que segura a onda de pé e lhe alisa a parede; o contrário deita-a abaixo antes de rebentar como deve ser. Uma praia com proporção alta tem o seu próprio microclima a jogar a seu favor."
+    }
+  },
+  "glossary": {
+    "title": "O que significam os números",
+    "lede": "Todos os números deste mapa saem da mesma pergunta, feita uma vez por hora durante quarenta anos: valia a pena surfar este mar, neste sítio, neste momento? O que se segue é o que essa pergunta significa e o que cada resposta está a contar.",
+    "sections": [
+      {
+        "heading": "Um dia surfável",
+        "body": [
+          "Três coisas têm de acontecer ao mesmo tempo. As ondas têm de ter tamanho suficiente para serem apanhadas e não tanto que sejam impraticáveis. Têm de chegar com ordem suficiente: uma ondulação de período longo, nascida num temporal distante, rebenta limpa; uma vaga local de vento, de período curto, não. E o vento tem de soprar no sentido certo: de terra para o mar segura a onda; de mar para terra achata-a.",
+          "Cada uma das três é pontuada de zero a dez, e as três são multiplicadas em vez de serem feitas média. É deliberado: uma ondulação perfeita com um vento ruinoso não é um dia médio, é um dia desperdiçado, e multiplicar permite que qualquer uma das três vete as outras.",
+          "Uma hora conta como surfável quando esse índice combinado chega a <b>{threshold}</b>. Um dia conta quando pelo menos uma das suas horas o faz. Tudo o resto neste mapa é uma maneira de contar esses dias."
+        ]
+      },
+      {
+        "heading": "De onde vêm as ondas",
+        "body": [
+          "As condições de ondulação ao largo vêm da reanálise IBI e os ventos do CERRA: ambos são reconstruções do que a atmosfera e o oceano fizeram realmente, hora a hora, de 1985 a 2024. Não são previsões nem modelos de um mundo hipotético.",
+          "O mar não chega à praia como sai do oceano aberto. Cada onda é refratada e empolada sobre a orientação própria da praia, por isso uma ondulação que bate num cabo de frente e outra de raspão são contadas de forma diferente. As ondas que chegam por trás de uma praia são atenuadas em vez de contadas, e é isso que faz com que dois pontos a um quilómetro deem respostas honestamente diferentes."
+        ]
+      },
+      {
+        "heading": "Um ponto de malha e uma praia estudada",
+        "body": [
+          "A linha colorida é uma malha: um ponto por quilómetro, cada um a tomar a orientação da costa onde está. É consistente em todo o lado e não sabe nada de nenhuma praia em particular.",
+          "As {spots} praias assinaladas são outra coisa. Cada uma foi colocada à mão, com a orientação que a praia tem de facto, e cada uma tem dezasseis fichas de análise próprias. Quando uma praia e o ponto de malha ao lado divergem, a praia é a melhor resposta, e a diferença é quase sempre a orientação: à volta de um cabo, a direção média da costa não é a direção para onde a praia olha."
+        ]
+      },
+      {
+        "heading": "O que o mapa deixa de fora",
+        "body": [
+          "As rias, os portos e o interior dos estuários são calculados mas não desenhados. A física sabe de refração e de empolamento, mas não de terra pelo meio: a um ponto dentro de um porto pode ser atribuída a ondulação de uma célula ao largo e declarar surf que nunca lá poderia chegar. Antes de isto ser apanhado, os seis pontos com melhor pontuação de todo o registo eram uma doca e duas rias interiores.",
+          "A Grã-Bretanha, o Mediterrâneo, a margem africana do Estreito e a costa do Sara também ficam de fora: estão fora do âmbito deste projeto, não são sítios onde o método falhe."
+        ]
+      }
+    ],
+    "metricsHeading": "As medidas, uma a uma",
+    "metricsLede": "Escolha uma para ver o que conta. As barras por baixo mostram como a costa publicada se reparte por ela, e nas cores que o mapa usa.",
+    "projectionsHeading": "As projeções e o seu vocabulário",
+    "projectionsLede": "A segunda metade deste mapa é o que dois modelos climáticos CMIP6 implicam para as mesmas praias. Quatro expressões carregam quase todo o significado.",
+    "terms": [
+      {
+        "term": "Face à sua própria história",
+        "body": "Cada modelo é comparado com o seu próprio 1985–2014, nunca com as observações. Os modelos correm húmidos ou secos; o que passa para o futuro é a mudança, não o nível. É por isso que uma praia pode mostrar 14 dias surfáveis observados ao lado de uma base de 56 no modelo sem que nada esteja errado."
+      },
+      {
+        "term": "Dentro do ruído",
+        "body": "Toda a praia oscila entre um ano bom e um mau, muitas vezes em dezenas de dias. Uma mudança projetada menor do que essa oscilação é menor do que a diferença entre dois anos normais, diga o que disser a estatística. Na maior parte desta costa, e na maioria dos horizontes, é exatamente aí que a mudança cai."
+      },
+      {
+        "term": "Para além do acaso",
+        "body": "Testando trinta mil pontos, umas centenas parecerão significativos só por sorte. Os valores-p são por isso corrigidos para que o que se reporta seja a taxa de falsas descobertas e não a contagem bruta. Uma mudança «para além do acaso» sobreviveu a essa correção."
+      },
+      {
+        "term": "Os modelos divergem",
+        "body": "Dois modelos são um conjunto pequeno, e duas coisas quaisquer concordam metade das vezes por acidente. Onde se movem em sentidos opostos, o mapa esbate o troço e di-lo, porque essa divergência é um resultado em si. É maior sobre as Canárias e a Madeira, que é também onde há mais surf a perder."
+      }
+    ]
+  },
+  "units": {
+    "days/yr": "dias/ano",
+    "days": "dias",
+    "index": "índice",
+    "% points": "pontos %",
+    "month": "mês",
+    "days/decade": "dias/década",
+    "ratio": "razão",
+    "correlation": "correlação",
+    "m": "m",
+    "s": "s",
+    "m/s": "m/s",
+    "fraction": "fração"
+  }
+}

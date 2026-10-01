@@ -1,0 +1,292 @@
+{
+  "lang": "fr",
+  "name": "Français",
+  "months": [
+    "jan",
+    "fév",
+    "mar",
+    "avr",
+    "mai",
+    "juin",
+    "juil",
+    "août",
+    "sep",
+    "oct",
+    "nov",
+    "déc"
+  ],
+  "ui": {
+    "subtitle": "Climat de surf de l'Atlantique européen",
+    "findBeach": "Chercher une plage",
+    "fullStatistics": "Statistiques complètes",
+    "whatTheNumbersMean": "Glossaire",
+    "share": "Partager",
+    "embed": "Intégrer",
+    "copied": "Copié",
+    "pressToCopy": "Appuyez sur Ctrl+C",
+    "lightOrDark": "Clair ou sombre",
+    "language": "Langue",
+    "close": "Fermer",
+    "noValue": "pas de valeur",
+    "whatTheMapShows": "Ce que montre la carte",
+    "measure": "Mesure",
+    "period": "Période",
+    "hindcast": "1985–2024",
+    "projections": "Projections",
+    "pathway": "Trajectoire",
+    "by": "À l'horizon",
+    "model": "Modèle",
+    "bothModels": "Les deux",
+    "showSpots": "Afficher les {count} plages fichées",
+    "groupSurfability": "Surfabilité",
+    "groupSeason": "Saison",
+    "groupChange": "Évolution",
+    "groupConditions": "Conditions",
+    "shareOfCoast": "{share} % de la côte",
+    "low": "faible",
+    "high": "élevé",
+    "lessSurf": "moins de surf",
+    "moreSurf": "plus",
+    "daysPerYear": "jours/an",
+    "fadedKeyBoth": "Atténué là où l'écart pourrait être dû au hasard, là où les deux modèles tirent en sens contraire, ou là où la plage a moins de {floor} jours surfables par an à perdre.",
+    "fadedKeyOne": "Atténué là où l'écart pourrait être dû au hasard, ou là où la plage a moins de {floor} jours surfables par an à perdre.",
+    "stripTitle": "Sur les {count} plages à plus de {floor} jours surfables par an",
+    "bucketRobust": "{share} % perdent du surf, dans les deux modèles, au-delà du hasard",
+    "bucketSoft": "{share} % perdent du surf, mais dans le bruit",
+    "bucketSplit": "{share} % les modèles divergent",
+    "bucketRising": "{share} % gagnent du surf, dans les deux modèles",
+    "aboutProjection": "{who}, face à son propre 1985–2014. Couleur pleine seulement là où l'écart dépasse le hasard sur toute la carte{andAgree} ; atténué en dessous de {floor} jours surfables par an.",
+    "aboutProjectionBoth": "Les deux modèles",
+    "aboutProjectionTheirOwn": "leur propre",
+    "aboutProjectionItsOwn": "son propre",
+    "aboutProjectionAgree": " dans les deux modèles, et ils s'accordent",
+    "changeLabel": "Évolution des jours surfables, {pathway} à l'horizon {horizon}",
+    "coastalPoint": "Point de la grille côtière",
+    "studiedBeach": "Plage étudiée",
+    "coastAt": "Côte à {lat}° {hemisphere}",
+    "faces": "orientée à {degrees}°",
+    "surfableDaysAYear": "jours surfables par an",
+    "inWinter": "{value} en hiver",
+    "inSummer": "{value} en été",
+    "perDecade": "{value} jours/décennie",
+    "notClear": " (non concluant)",
+    "cardsCount": "{count} fiches, réanalyse et projections",
+    "yearByYear": "Année par année",
+    "throughTheYear": "Au fil de l'année",
+    "conditionsAndSetting": "Conditions et cadre",
+    "openCards": "Ouvrir les fiches de cette plage →",
+    "captionAnnual": "Jours surfables chaque année, de {first} à {last}. La ligne pointillée est la moyenne.",
+    "captionMonthly": "Barres : part du mois qui est surfable. Ligne : l'indice moyen, qui dit la qualité de la mer même lorsqu'elle n'atteint pas le seuil.",
+    "factFrom": "D'après",
+    "factOwnCard": "sa propre fiche, à la plage",
+    "factAspect": "Orientation retenue",
+    "factWaveHeight": "Hauteur de houle à la plage",
+    "factWavePeriod": "Période de houle",
+    "factWindSpeed": "Vitesse du vent",
+    "factOffshoreWind": "Vent de terre",
+    "factBestMonth": "Meilleur mois",
+    "factFlatSpell": "Plus longue période plate",
+    "factNAO": "Lien avec la NAO",
+    "nearbyBeach": "<b>{name}</b> est à {km} km et possède sa propre fiche, qui indique {days} jours par an.",
+    "nearbyAspect": " Elle diffère de ce point parce que la plage regarde à {beach}° et ce point à {point}°.",
+    "openTheBeach": "Ouvrir la plage",
+    "whatTheModelsProject": "Ce que projettent les deux modèles",
+    "verdictBelowFloor": "Moins de {floor} jours surfables par an ici, trop peu pour qu'une évolution y ait du sens. Les modèles répondent tout de même : {both} à l'horizon {horizon} sous {pathway}.",
+    "verdictSplit": "<b>Les deux modèles tirent en sens contraire ici</b> — {both} à l'horizon {horizon} sous {pathway}. Ce désaccord est le résultat, pas quelque chose à moyenner.",
+    "verdictNotSure": "Les deux modèles penchent vers {word} à l'horizon {horizon} sous {pathway} — {both} — mais l'écart ne dépasse pas ce qu'une carte de trente mille points produit par hasard. À lire comme une inclination, pas comme une prévision.",
+    "verdictBothBeyond": "<b>Les deux modèles s'accordent sur {word}</b> à l'horizon {horizon} sous {pathway} : {both} — et chaque écart dépasse l'amplitude que ce modèle montre entre une bonne année ordinaire et une mauvaise. C'est le cas solide.",
+    "verdictOneBeyond": "<b>Les deux modèles s'accordent sur {word}</b> à l'horizon {horizon} sous {pathway} : {both}. L'écart de {model} dépasse l'amplitude entre ses propres bonnes et mauvaises années ; celui de l'autre modèle non, donc le combien reste ouvert même si le sens ne l'est pas.",
+    "verdictNeitherBeyond": "<b>Les deux modèles s'accordent sur {word}</b> à l'horizon {horizon} sous {pathway} : {both}. Chacun dépasse le hasard, mais tous deux restent dans l'amplitude que ce modèle montre déjà entre une bonne année ordinaire et une mauvaise.",
+    "lessSurfWord": "moins de surf",
+    "moreSurfWord": "plus de surf",
+    "daysAYear": "{a} et {e} jours par an",
+    "captionProjection": "Évolution des jours surfables par an face au 1985–2014 propre à chaque modèle, sous {pathway}. Chaque bande ombrée est l'amplitude de ce modèle entre années ordinaires, ±1 écart-type de ses trente totaux annuels : un écart qui reste dans sa bande est plus petit que la différence entre une bonne et une mauvaise année. Les points pleins survivent à la correction des faux positifs sur toute la carte ; les points creux non.",
+    "baselineNote": "L'historique descendu en échelle de cette plage vaut {ratios} son relevé observé. C'est pourquoi chaque évolution est mesurée contre le passé du modèle lui-même et jamais contre les observations.",
+    "factSwing": "Amplitude interannuelle de cette plage",
+    "factSwingValue": "±{value} jours",
+    "factModelBy": "{model} à l'horizon {horizon}",
+    "factModelValue": "{value} jours par an",
+    "beyondTheSwing": " · dépasse l'amplitude",
+    "beyondChance": " · au-delà du hasard",
+    "withinTheNoise": " · dans le bruit",
+    "factModelHistory": "{model}, son propre 1985–2014",
+    "sheetTitle": "Ce que disent les projections",
+    "sheetLede": "Deux modèles CMIP6, deux trajectoires, trois horizons, chacun mesuré face à son propre 1985–2014 plutôt qu'aux observations. Sur les <b>{total}</b> plages ayant assez de surf pour être résumées, seul SSP5-8.5 à 2071–2100 les déplace presque toutes ensemble : <b>{robust} %</b> perdent du surf dans les deux modèles au-delà du hasard. Partout ailleurs l'écart reste dans le bruit pour la grande majorité de la côte. Et deux modèles font un petit ensemble — deux choses quelconques s'accordent une fois sur deux par accident.",
+    "sheetComposition": "Quelle part de la côte chaque run affirme vraiment",
+    "sheetCompositionCaption": "Toutes les plages à plus de {floor} jours surfables par an, réparties en quatre. Un run vous dit quelque chose seulement là où la bande sombre est large.",
+    "sheetSpread": "L'ampleur de l'évolution, run par run",
+    "sheetSpreadCaption": "La moitié centrale des plages, médiane marquée, chaque modèle face à son propre 1985–2014.",
+    "sheetSpreadUnit": "évolution des jours surfables par an",
+    "sheetAgreement": "Où les deux modèles s'accordent, plage par plage",
+    "sheetAgreementCaption": "{pathway} à l'horizon {horizon}, un carré par groupe de plages. Sur la diagonale pointillée, les deux modèles disent la même chose ; plus on s'en éloigne, plus ils divergent sur l'ampleur. Les deux perdent du surf sur <b>{bothDown} %</b> des plages, les deux en gagnent sur {bothUp} %, et sur {split} % l'un gagne quand l'autre perd.",
+    "sheetAreas": "Par zone",
+    "sheetAreasCaption": "Évolution médiane et part des plages qui perdent du surf. Les Canaries et Madère sont là où les modèles se séparent, et aussi là où il y a le plus de surf à perdre.",
+    "areaFacade": "Façade atlantique",
+    "areaSouth": "Sud de la péninsule",
+    "areaIslands": "Canaries et Madère",
+    "bothLoseSurf": "les deux modèles perdent du surf",
+    "daysAYearAxis": "jours par an",
+    "falling": "{share} % en baisse",
+    "noMapTitle": "La bibliothèque de la carte n'a pas pu être chargée.",
+    "noMapBody": "maplibre-gl 4.7.1 est récupérée depuis cdn.jsdelivr.net, que ce navigateur n'atteint pas. Tous les chiffres derrière la carte sont locaux et le panneau à côté fonctionne toujours ; rechargez lorsque le réseau autorisera cet hôte.",
+    "mapUnavailable": " · bibliothèque de carte indisponible",
+    "mismatchTitle": "Cette page mélange des fichiers de deux versions différentes.",
+    "mismatchBody": "Une copie en cache d'un fichier de données a été associée à une copie fraîche d'un autre, et ensemble ils ne décrivent rien de réel. Rechargez avec Ctrl+Maj+R (Cmd+Maj+R sur Mac) pour nettoyer.",
+    "credit": "{count} points côtiers · {from}–{to} · seuil de l'indice {threshold} · iSURFATLANTIC, IHCantabria",
+    "alsoCalled": "aussi appelée {names}",
+    "gridNote": "La grille côtière au kilomètre voisine regarde à {degrees}° et donne <b>{days} jours par an</b>. Quand les deux orientations diffèrent, les chiffres aussi, et la fiche est celle mesurée à la plage.",
+    "seeGridPoint": "Voir ce point de grille",
+    "tipSpread": "{model} : médiane {median}, moitié centrale de {q1} à {q3} jours par an",
+    "tipArea": "{model} : médiane {median} jours par an sur {count} plages",
+    "pageTitle": "iSurfability — Climat de surf de l'Atlantique européen",
+    "noProjections": "Cette version ne contient pas de projections"
+  },
+  "metrics": {
+    "mean_days_per_year": {
+      "label": "Jours surfables par an",
+      "about": "Jours par an où l'indice de surfabilité dépasse le seuil.",
+      "plain": "Le chiffre principal. Sur 365 jours, combien ont offert une mer qui valait la rame : des vagues assez grosses et assez propres, avec un vent qui ne les a pas gâchées. Une plage à 150 est surfable environ un jour sur deux ; une plage à 10 vous donne l'équivalent d'un long week-end par an, le plus souvent dans les tempêtes d'hiver."
+    },
+    "index_p90": {
+      "label": "Qualité des meilleurs jours",
+      "about": "La valeur de l'indice qu'un jour sur dix seulement dépasse.",
+      "plain": "Non pas la fréquence, mais le niveau que ça atteint. On prend le meilleur dixième de toutes les heures et on regarde jusqu'où monte l'indice. Deux plages peuvent avoir le même nombre de jours surfables alors que l'une ne produit jamais rien de mémorable et l'autre si, régulièrement."
+    },
+    "median_surfable_spell_days": {
+      "label": "Durée typique d'une série surfable",
+      "about": "Combien de temps dure habituellement une série surfable une fois commencée.",
+      "plain": "Quand ça s'allume, combien de temps ça reste allumé. C'est ce qui décide si un voyage vaut la peine d'être planifié : trois jours d'affilée veut dire qu'on peut rouler sur une prévision ; un jour à la fois veut dire qu'il faut habiter à côté."
+    },
+    "longest_flat_spell_days": {
+      "label": "Plus longue période plate",
+      "about": "Le plus longtemps que la mer est restée sous le seuil sur tout le relevé. Ici long est mauvais, donc l'échelle est inversée.",
+      "plain": "La pire sécheresse en quarante ans : le plus longtemps que la mer est restée sans un seul jour surfable. Long est mauvais, donc cette échelle tourne à l'envers des autres : le sombre est une plage qui ne s'éteint jamais vraiment."
+    },
+    "days_winter": {
+      "label": "Jours surfables en hiver",
+      "about": "De décembre à février.",
+      "plain": "Jours surfables tombant en décembre, janvier et février. Sur cette côte c'est là qu'est presque tout le surf, ce qui est aussi le moment où l'eau est la plus froide et les tempêtes les moins indulgentes."
+    },
+    "days_summer": {
+      "label": "Jours surfables en été",
+      "about": "De juin à août.",
+      "plain": "Jours surfables tombant en juin, juillet et août. C'est le chiffre qui décide si une plage a quelque chose à offrir à la saison où les gens sont réellement en vacances."
+    },
+    "seasonal_amplitude_pct": {
+      "label": "Degré de saisonnalité",
+      "about": "Meilleur mois moins pire mois, en points de pourcentage de temps surfable.",
+      "plain": "À quel point l'année est inégale. Un nombre élevé désigne une plage qui marche en hiver et meurt en été ; un nombre bas, un endroit qui donne quelque chose toute l'année, même si ce n'est jamais grand-chose."
+    },
+    "best_month_number": {
+      "label": "Meilleur mois",
+      "about": "Le mois comptant le plus d'heures surfables.",
+      "plain": "Quel mois donne le plus. Sur l'Atlantique ouvert c'est presque toujours le cœur de l'hiver ; quand ce ne l'est pas, c'est que l'orientation ou l'abri de la plage y est pour quelque chose."
+    },
+    "trend_days_per_decade": {
+      "label": "Tendance, 1985 à 2024",
+      "about": "Pente des moindres carrés des jours surfables par an. Atténuée là où la pente ne se distingue pas de zéro et là où la côte part de moins de 5 jours surfables par an.",
+      "plain": "Si le relevé lui-même dérive : combien de jours surfables par an la plage a gagnés ou perdus par décennie depuis 1985. C'est ce qui a été mesuré, pas ce qui est projeté. À lire avec prudence : un décompte qui ne peut pas descendre sous zéro ne peut que monter, et c'est pourquoi une plage presque sans surf semblera presque toujours s'améliorer. La carte atténue celles-là."
+    },
+    "interannual_variability": {
+      "label": "Amplitude d'une année à l'autre",
+      "about": "Dispersion entre années, rapportée à l'année moyenne.",
+      "plain": "De combien une année diffère de la suivante. C'est l'étalon auquel tout le reste devrait être comparé : une plage qui oscille de trente jours entre une bonne et une mauvaise année n'est pas vraiment changée par un décalage de cinq jours."
+    },
+    "corr_NAO": {
+      "label": "Lien avec la NAO",
+      "about": "Corrélation entre l'indice NAO hivernal et les jours surfables de cet hiver.",
+      "plain": "À quel point la plage suit l'Oscillation nord-atlantique, la bascule de pression qui pilote les tempêtes d'hiver à travers l'océan. Un lien fort signifie que le surf de l'hiver se décide en grande partie au large, des mois à l'avance, et que les bonnes et mauvaises années de la plage arrivent par séries."
+    },
+    "mean_nearshore_wave_height": {
+      "label": "Hauteur de houle à la plage",
+      "about": "Hauteur significative moyenne après réfraction et levée.",
+      "plain": "La hauteur moyenne de la vague une fois la houle courbée et levée en arrivant, et non ce que dit la bouée du large. Deux plages distantes d'un kilomètre peuvent différer d'un demi-mètre parce que l'une fait face à la houle et l'autre est à l'ombre d'un cap."
+    },
+    "mean_wave_period": {
+      "label": "Période de houle",
+      "about": "Période de pic moyenne au large.",
+      "plain": "Les secondes entre une vague et la suivante. Période longue veut dire houle née d'une tempête lointaine, qui arrive ordonnée et casse bien ; période courte veut dire mer du vent locale, qui arrive en désordre."
+    },
+    "mean_wind_speed": {
+      "label": "Vitesse du vent",
+      "about": "Vitesse moyenne du vent à 10 m.",
+      "plain": "Vent moyen à la plage. Le vent est ce qui sépare une bonne houle d'une houle gâchée, et sa direction compte plus que sa force : voir la mesure suivante."
+    },
+    "offshore_wind_fraction": {
+      "label": "Part de vent de terre",
+      "about": "Fraction du temps où le vent souffle de la terre vers la mer, le vent qui peigne la vague.",
+      "plain": "À quelle fréquence le vent souffle de la terre vers la mer. C'est le vent qui tient la vague debout et lisse sa face ; l'inverse la couche avant qu'elle ne casse correctement. Une plage à forte part a son propre petit climat qui joue en sa faveur."
+    }
+  },
+  "glossary": {
+    "title": "Ce que veulent dire les chiffres",
+    "lede": "Tous les chiffres de cette carte viennent de la même question, posée une fois par heure pendant quarante ans : la mer valait-elle d'être surfée, à cet endroit, à cet instant ? Ce qui suit explique ce que signifie cette question et ce que compte chacune de ses réponses.",
+    "sections": [
+      {
+        "heading": "Un jour surfable",
+        "body": [
+          "Trois choses doivent être réunies en même temps. Les vagues doivent être assez grosses pour être prises et pas assez pour être impraticables. Elles doivent arriver avec assez d'ordre : une houle de longue période née d'une tempête lointaine casse proprement, une mer du vent locale de courte période non. Et le vent doit souffler dans le bon sens : de terre vers la mer, il tient la vague ; de mer vers la terre, il l'aplatit.",
+          "Chacun des trois est noté sur dix, et les trois sont multipliés plutôt que moyennés. C'est délibéré : une houle parfaite avec un vent catastrophique n'est pas une journée moyenne, c'est une journée gâchée, et multiplier permet à n'importe lequel des trois d'opposer son veto aux autres.",
+          "Une heure compte comme surfable quand cet indice combiné atteint <b>{threshold}</b>. Un jour compte quand au moins une de ses heures y parvient. Tout le reste de cette carte est une façon de compter ces jours."
+        ]
+      },
+      {
+        "heading": "D'où viennent les vagues",
+        "body": [
+          "Les conditions de houle au large viennent de la réanalyse IBI et les vents de CERRA : ce sont des reconstructions de ce que l'atmosphère et l'océan ont réellement fait, heure par heure, de 1985 à 2024. Ni des prévisions, ni des modèles d'un monde hypothétique.",
+          "La mer n'arrive pas à la plage comme elle quitte le large. Chaque vague est réfractée et levée sur l'orientation propre de la plage, si bien qu'une houle qui frappe un cap de face et une autre de biais sont comptées différemment. Les vagues arrivant par l'arrière d'une plage sont atténuées plutôt que comptées, et c'est ce qui fait que deux points distants d'un kilomètre donnent honnêtement des réponses différentes."
+        ]
+      },
+      {
+        "heading": "Un point de grille et une plage étudiée",
+        "body": [
+          "La ligne colorée est une grille : un point par kilomètre, chacun prenant l'orientation de la côte là où il se trouve. Elle est cohérente partout et ne sait rien d'aucune plage en particulier.",
+          "Les {spots} plages marquées sont autre chose. Chacune a été placée à la main, avec l'orientation que la plage a réellement, et chacune possède seize fiches d'analyse. Quand une plage et le point de grille voisin divergent, la plage est la meilleure réponse, et l'écart tient presque toujours à l'orientation : autour d'un cap, la direction moyenne de la côte n'est pas celle vers laquelle la plage regarde."
+        ]
+      },
+      {
+        "heading": "Ce que la carte laisse de côté",
+        "body": [
+          "Les rias, les ports et l'intérieur des estuaires sont calculés mais non tracés. La physique connaît la réfraction et la levée, mais pas la terre qui fait obstacle : un point à l'intérieur d'un port peut recevoir la houle d'une maille du large et annoncer un surf qui ne pourrait jamais l'atteindre. Avant qu'on s'en aperçoive, les six points les mieux notés de tout le relevé étaient un bassin portuaire et deux rias intérieures.",
+          "La Grande-Bretagne, la Méditerranée, la rive africaine du détroit et la côte saharienne sont aussi écartées : elles sortent du cadre de ce projet, ce ne sont pas des endroits où la méthode échoue."
+        ]
+      }
+    ],
+    "metricsHeading": "Les mesures, une par une",
+    "metricsLede": "Choisissez-en une pour voir ce qu'elle compte. Les barres en dessous montrent comment la côte publiée s'y répartit, dans les couleurs qu'utilise la carte.",
+    "projectionsHeading": "Les projections et leur vocabulaire",
+    "projectionsLede": "La seconde moitié de cette carte est ce que deux modèles climatiques CMIP6 impliquent pour les mêmes plages. Quatre expressions portent l'essentiel du sens.",
+    "terms": [
+      {
+        "term": "Face à sa propre histoire",
+        "body": "Chaque modèle est comparé à son propre 1985–2014, jamais aux observations. Les modèles tournent humides ou secs ; ce qui se reporte sur l'avenir est l'écart, pas le niveau. C'est pourquoi une plage peut afficher 14 jours surfables observés à côté d'une base de 56 dans le modèle sans que rien ne cloche."
+      },
+      {
+        "term": "Dans le bruit",
+        "body": "Toute plage oscille entre une bonne et une mauvaise année, souvent de plusieurs dizaines de jours. Une évolution projetée plus petite que cette amplitude est plus petite que la différence entre deux années ordinaires, quoi qu'en disent les statistiques. Sur la plus grande partie de cette côte, et à la plupart des horizons, c'est exactement là que se situe l'évolution."
+      },
+      {
+        "term": "Au-delà du hasard",
+        "body": "Sur trente mille points testés, quelques centaines paraîtront significatifs par pure chance. Les p-valeurs sont donc corrigées pour que ce qui est rapporté soit le taux de fausses découvertes et non le décompte brut. Un écart « au-delà du hasard » a survécu à cette correction."
+      },
+      {
+        "term": "Les modèles divergent",
+        "body": "Deux modèles font un petit ensemble, et deux choses quelconques s'accordent une fois sur deux par accident. Là où ils vont en sens contraire, la carte atténue le tronçon et le dit, car ce désaccord est un résultat en soi. Il est le plus marqué sur les Canaries et Madère, qui sont aussi là où il y a le plus de surf à perdre."
+      }
+    ]
+  },
+  "units": {
+    "days/yr": "jours/an",
+    "days": "jours",
+    "index": "indice",
+    "% points": "points de %",
+    "month": "mois",
+    "days/decade": "jours/décennie",
+    "ratio": "rapport",
+    "correlation": "corrélation",
+    "m": "m",
+    "s": "s",
+    "m/s": "m/s",
+    "fraction": "fraction"
+  }
+}
